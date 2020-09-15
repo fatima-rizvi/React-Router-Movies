@@ -39,8 +39,8 @@ export default function App () {
       <SavedList list={[ /* stretch */ ]} />
       <Switch>
         <Route path = '/movies/:id'>
-          {/* <Movie movies = {movieList}/> */}
-          <MovieCard movies = {movieList}/>
+          <Movie movies = {movieList}/>
+          {/* <MovieCard movies = {movieList}/> */}
         </Route>
         <Route path = '/'>
           <MovieList movies = {movieList} />
