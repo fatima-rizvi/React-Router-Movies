@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Route, Link, Switch } from 'react-router-dom'
 import MovieList from './Movies/MovieList'
 import Movie from './Movies/Movie'
+import MovieCard from './Movies/MovieCard'
 
 import SavedList from './Movies/SavedList';
 
@@ -38,7 +39,8 @@ export default function App () {
       <SavedList list={[ /* stretch */ ]} />
       <Switch>
         <Route path = '/movies/:id'>
-          <Movie movies = {movieList}/>
+          {/* <Movie movies = {movieList}/> */}
+          <MovieCard movies = {movieList}/>
         </Route>
         <Route path = '/'>
           <MovieList movies = {movieList} />
